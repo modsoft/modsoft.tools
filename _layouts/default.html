@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}">
+  {% seo %}
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <a class="site-logo" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/logotype.png' | relative_url }}" alt="Trey McNair" width="1500" height="135">
+    </a>
+    <nav aria-label="Sections">
+      <ul class="header-nav">
+        <li><a href="https://modsoft.net/">GAME</a></li>
+        <li><a href="https://www.modsoft.art/">PHOTO</a></li>
+        <li><a href="https://www.modsoft.art/books">BOOKS</a></li>
+        <li><a href="https://www.modsoft.art/about">ABOUT</a></li>
+        <li><a href="{{ '/' | relative_url }}" aria-current="page">TECH</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="content" class="main">
+    {{ content }}
+  </main>
+  <footer class="site-footer">
+    <p>© {{ site.time | date: "%Y" }} Trey McNair</p>
+  </footer>
+</body>
+</html>

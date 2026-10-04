@@ -1,0 +1,18 @@
+title: Trey McNair
+description: Notes on tools, pipelines, and the technical side of the work.
+url: https://modsoft.tech
+baseurl: ""
+timezone: America/Los_Angeles
+markdown: kramdown
+permalink: /:title/
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+author:
+  name: Trey McNair
+  url: https://modsoft.tech
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
