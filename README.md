@@ -1,4 +1,4 @@
-# modsoft.tech
+# modsoft.tools
 
 Tech notes, published with Jekyll on GitHub Pages.
 
