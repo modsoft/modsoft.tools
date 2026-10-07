@@ -29,7 +29,7 @@ body {
 }
 
 ::selection {
-  background: hsla(0, 57%, 46%, 0.45);
+  background: var(--accent);
   color: #fff;
 }
 
