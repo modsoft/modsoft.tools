@@ -137,10 +137,20 @@ a:focus-visible {
 }
 
 .rule {
+  position: relative;
   height: 1px;
   margin: 2.25rem 0 0;
-  border: 0;
-  background: linear-gradient(90deg, var(--accent), var(--line) 7rem, transparent);
+  background: var(--line);
+}
+
+.rule::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2.5rem;
+  height: 1px;
+  background: var(--accent);
 }
 
 .posts {
