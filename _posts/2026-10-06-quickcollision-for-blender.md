@@ -4,11 +4,19 @@ title: Blender QuickCollision
 permalink: /quickcollision-for-blender/
 ---
 
-<a href="https://github.com/modsoft/blender-quickcollision" target="_blank" rel="noopener">github.com/modsoft/blender-quickcollision</a>
+Hey! I'm sharing a free Blender add-on I've been working on for generating game-engine ready collision meshes.  
+  
+QuickCollision can generate various box, sphere, capsule, and convex collision meshes from your selection, with game-engine-compliant collision naming. Convex hull generation uses an implementation of the StanHull algorithm from the PhysX toolchain. Inspired by a similar tool I was missing when switching from Maya to Blender. Hope others find this useful!  
+  
+It’s free and open source here: <a href="https://github.com/modsoft/blender-quickcollision" target="_blank" rel="noopener">github.com/modsoft/blender-quickcollision</a>
 
-Quickly generate game engine compliant collision meshes.
 
-<img width="1920" height="1080" alt="qc_splash" src="{{ '/assets/quickcollision/qc_splash.png' | relative_url }}" />
+
+Full details:
+
+---
+
+![qc_splash]({{ '/assets/quickcollision/qc_splash.png' | relative_url }})
 
 # Features
 
@@ -17,13 +25,13 @@ Quickly generate game engine compliant collision meshes.
 - Colliders can be auto-parented to their source, gathered into a dedicated collection, and displayed as wireframe.
 - **Convex generation generated with an implementation of StanHull** — Stan Melax's approximating hull algorithm from the PhysX toolchain. (Credit to Stan Melax and John Ratcliff.)
 
-<img width="1366" height="768" alt="previews_01" src="{{ '/assets/quickcollision/previews_01.png' | relative_url }}" />
+![previews_01]({{ '/assets/quickcollision/previews_01.png' | relative_url }})
 
-<img width="1366" height="768" alt="previews_02" src="{{ '/assets/quickcollision/previews_02.png' | relative_url }}" />
+![previews_02]({{ '/assets/quickcollision/previews_02.png' | relative_url }})
 
 - **Compact UI Mode** `Settings > Compact View`
 
-<img width="318" height="233" alt="image" src="{{ '/assets/quickcollision/compact-ui.png' | relative_url }}" />
+![image]({{ '/assets/quickcollision/compact-ui.png' | relative_url }})
 
 ## Install
 
@@ -40,3 +48,4 @@ The add-on (Python) is **GPL-3.0-or-later**. See [LICENSE](https://github.com/mo
 
 - **StanHull** (`native/`, `stanhull-win64.dll`, `stanhull-linux64.so`): BSD-3-Clause. See [native/LICENSE](https://github.com/modsoft/blender-quickcollision/blob/main/native/LICENSE) and [NOTICE](https://github.com/modsoft/blender-quickcollision/blob/main/NOTICE).
 - **Icons** (`icons/*.png`): [CC0 1.0](https://github.com/modsoft/blender-quickcollision/blob/main/icons/LICENSE).
+
