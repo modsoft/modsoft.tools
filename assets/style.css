@@ -140,7 +140,7 @@ a:focus-visible {
   position: relative;
   height: 1px;
   margin: 2.25rem 0 0;
-  background: var(--line);
+  background: rgba(198, 163, 106, 0.28);
 }
 
 .rule::before {
