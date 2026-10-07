@@ -1,10 +1,12 @@
 :root {
-  --bg: #070707;
+  --bg: #000;
   --text: #f3f0ea;
   --muted: #8f8a84;
-  --line: #2c2824;
-  --accent: #c6a36a;
-  --accent-wash: rgba(198, 163, 106, 0.08);
+  --line: hsla(0, 22%, 16%, 1);
+  --accent: hsla(0, 57%, 46%, 1);
+  --accent-bright: hsla(0, 57%, 62%, 1);
+  --accent-wash: hsla(0, 57%, 46%, 0.14);
+  --column: 58rem;
 }
 
 html {
@@ -18,13 +20,14 @@ html {
 html,
 body {
   margin: 0;
-  background: var(--bg);
+  min-height: 100%;
+  background: #000;
   color: var(--text);
   font-family: "Space Grotesk", Helvetica, Arial, sans-serif;
 }
 
 ::selection {
-  background: rgba(198, 163, 106, 0.35);
+  background: hsla(0, 57%, 46%, 0.45);
   color: #fff;
 }
 
@@ -41,11 +44,19 @@ body {
   top: 0.5rem;
 }
 
+.site-header,
+.main,
+.site-footer {
+  width: min(var(--column), calc(100% - 3rem));
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .site-header {
   display: flex;
   align-items: center;
-  padding: 1vw 4vw;
-  background: #070707;
+  padding: 1.35rem 0;
+  background: #000;
 }
 
 .site-logo img {
@@ -62,7 +73,7 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1.7vw;
+  gap: 1.75rem;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -78,6 +89,7 @@ body {
 
 .header-nav a[aria-current="page"] {
   text-decoration: underline;
+  text-decoration-color: var(--accent);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.45em;
 }
@@ -88,8 +100,7 @@ a:focus-visible {
 }
 
 .main {
-  padding: 2.5rem 4vw 5rem;
-  max-width: 58rem;
+  padding: 2.5rem 0 5rem;
 }
 
 .projects {
@@ -140,7 +151,7 @@ a:focus-visible {
   position: relative;
   height: 1px;
   margin: 2.25rem 0 0;
-  background: #5c4e38;
+  background: hsla(0, 42%, 28%, 1);
 }
 
 .rule::before {
@@ -220,7 +231,7 @@ a:focus-visible {
 }
 
 .post-body a:hover {
-  color: #e4cda0;
+  color: var(--accent-bright);
 }
 
 .post-body img {
@@ -234,13 +245,13 @@ a:focus-visible {
 }
 
 .post-body :not(pre) > code {
-  background: #161616;
+  background: #000;
   padding: 0.1em 0.35em;
 }
 
 .post-body pre {
-  background: #101010;
-  border: 1px solid #222;
+  background: #000;
+  border: 1px solid var(--line);
   padding: 1rem 1.1rem;
   overflow: auto;
   font-family: "PT Mono", ui-monospace, monospace;
@@ -249,7 +260,7 @@ a:focus-visible {
 }
 
 .site-footer {
-  padding: 0 4vw 2.5rem;
+  padding: 0 0 2.5rem;
   color: #8d8d8d;
   font-size: 0.85rem;
 }
@@ -262,7 +273,7 @@ a:focus-visible {
   .site-header {
     flex-wrap: wrap;
     gap: 14px 0;
-    padding: 16px 20px;
+    padding: 16px 0;
   }
 
   .site-header > nav {
@@ -277,7 +288,7 @@ a:focus-visible {
   }
 
   .main {
-    padding: 2rem 20px 4rem;
+    padding: 2rem 0 4rem;
   }
 
   .projects {
@@ -290,6 +301,6 @@ a:focus-visible {
   }
 
   .site-footer {
-    padding: 0 20px 2rem;
+    padding: 0 0 2rem;
   }
 }
