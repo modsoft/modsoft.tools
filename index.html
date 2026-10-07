@@ -3,7 +3,7 @@ layout: default
 ---
 <section class="projects" aria-label="Projects">
   {% for project in site.data.projects %}
-  <a class="project" href="{{ project.url }}">
+  <a class="project" href="{{ project.url }}" target="_blank" rel="noopener">
     <span class="project-icon">{% include icon.html name=project.icon %}</span>
     <span class="project-name">{{ project.name }}</span>
     <span class="project-note">{{ project.note }}</span>
