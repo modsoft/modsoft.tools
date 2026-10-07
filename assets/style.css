@@ -91,7 +91,7 @@ body {
 
 .header-nav a[aria-current="page"] {
   text-decoration: underline;
-  text-decoration-color: var(--accent);
+  text-decoration-color: #fff;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.45em;
 }
@@ -220,10 +220,20 @@ a:focus-visible {
   line-height: 1.7;
 }
 
+.post-body h1,
 .post-body h2 {
   margin-top: 2.2rem;
-  font-size: 1.35rem;
   font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.post-body h1 {
+  font-size: 1.6rem;
+}
+
+.post-body h2 {
+  font-size: 1.35rem;
 }
 
 .post-body a {
@@ -237,8 +247,10 @@ a:focus-visible {
 }
 
 .post-body img {
+  display: block;
   max-width: 100%;
   height: auto;
+  margin: 1.25rem 0;
 }
 
 .post-body code {
