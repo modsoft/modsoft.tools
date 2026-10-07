@@ -1,9 +1,18 @@
 ---
 layout: default
 ---
-<p class="lede">{{ site.description }}</p>
+<section class="projects" aria-label="Projects">
+  {% for project in site.data.projects %}
+  <a class="project" href="{{ project.url }}">
+    <span class="project-icon">{% include icon.html name=project.icon %}</span>
+    <span class="project-name">{{ project.name }}</span>
+    <span class="project-note">{{ project.note }}</span>
+  </a>
+  {% endfor %}
+</section>
 
 {% if site.posts.size > 0 %}
+<hr class="rule">
 <ul class="posts">
   {% for post in site.posts %}
   <li>
