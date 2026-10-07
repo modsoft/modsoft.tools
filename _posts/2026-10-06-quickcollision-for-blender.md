@@ -4,6 +4,8 @@ title: Blender QuickCollision
 permalink: /quickcollision-for-blender/
 ---
 
+<a href="https://github.com/modsoft/blender-quickcollision" target="_blank" rel="noopener">github.com/modsoft/blender-quickcollision</a>
+
 Quickly generate game engine compliant collision meshes.
 
 <img width="1920" height="1080" alt="qc_splash" src="{{ '/assets/quickcollision/qc_splash.png' | relative_url }}" />
