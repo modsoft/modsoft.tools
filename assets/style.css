@@ -105,70 +105,24 @@ a:focus-visible {
   padding: 2.5rem 0 5rem;
 }
 
-.projects {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0.75rem;
-}
-
-.project {
-  display: flex;
-  flex-direction: column;
-  min-height: 8.25rem;
-  padding: 1rem 1rem 0.95rem;
-  border: 1px solid var(--line);
-  color: inherit;
-  text-decoration: none;
-}
-
-.project:hover,
-.project:focus-visible {
-  border-color: var(--accent);
-  background: var(--accent-wash);
-}
-
-.project-icon {
-  display: block;
-  margin-bottom: auto;
+.github-link {
+  display: inline-flex;
   color: var(--accent);
   line-height: 0;
 }
 
-.project-name {
-  margin-top: 1.4rem;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
+.github-link svg {
+  width: 20px;
+  height: 20px;
 }
 
-.project-note {
-  margin-top: 0.3rem;
-  color: var(--muted);
-  font-size: 0.84rem;
-  line-height: 1.35;
-}
-
-.rule {
-  position: relative;
-  height: 1px;
-  margin: 2.25rem 0 0;
-  background: hsla(0, 42%, 28%, 1);
-}
-
-.rule::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 2.5rem;
-  height: 1px;
-  background: var(--accent);
+.github-link:hover {
+  color: var(--accent-bright);
 }
 
 .posts {
   list-style: none;
-  margin: 2.5rem 0 0;
+  margin: 1.75rem 0 0;
   padding: 0;
 }
 
@@ -299,10 +253,6 @@ a:focus-visible {
 
   .main {
     padding: 2rem 0 4rem;
-  }
-
-  .projects {
-    grid-template-columns: 1fr 1fr;
   }
 
   .posts li {
