@@ -5,6 +5,8 @@ permalink: /pro-workflow-tools-beta/
 robots: noindex, nofollow
 ---
 
+<img class="splash" src="{{ '/assets/pro-workflow-tools/splash.png' | relative_url }}" alt="ProWorkflowTools">
+
 <h2 class="beta-heading">Downloads</h2>
 <ul class="downloads">
   <li><a href="{{ '/releases/ProWorkflowTools_0.1.0_UE5.7_Win64.zip' | relative_url }}">ProWorkflowTools 0.1.0 — UE 5.7 Win64</a></li>
