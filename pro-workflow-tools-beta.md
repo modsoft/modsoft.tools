@@ -8,6 +8,7 @@ robots: noindex, nofollow
 <h2 class="beta-heading">Downloads</h2>
 <ul class="downloads">
   <li><a href="{{ '/releases/ProWorkflowTools_0.1.0_UE5.7_Win64.zip' | relative_url }}">ProWorkflowTools 0.1.0 — UE 5.7 Win64</a></li>
+  <li><a href="{{ '/releases/ProWorkflowTools_0.1.0_UE5.8_Win64.zip' | relative_url }}">ProWorkflowTools 0.1.0 — UE 5.8 Win64</a></li>
 </ul>
 
 <h2 class="beta-heading">Install</h2>

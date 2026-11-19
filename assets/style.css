@@ -258,6 +258,10 @@ a:focus-visible {
   padding: 0;
 }
 
+.downloads li + li {
+  margin-top: 0.4rem;
+}
+
 .downloads a {
   color: var(--text);
   font-weight: 600;
