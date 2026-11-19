@@ -5,9 +5,19 @@ permalink: /pro-workflow-tools-beta/
 robots: noindex, nofollow
 ---
 
+<h2 class="beta-heading">Downloads</h2>
 <ul class="downloads">
   <li><a href="{{ '/releases/ProWorkflowTools_0.1.0_UE5.7_Win64.zip' | relative_url }}">ProWorkflowTools 0.1.0 — UE 5.7 Win64</a></li>
 </ul>
+
+<h2 class="beta-heading">Install</h2>
+<ol class="install">
+  <li>Unzip it and move the <code>ProWorkflowTools</code> folder into <code>YourProject/Plugins/</code>.</li>
+  <li>Launch the project.</li>
+  <li>Enable <strong>Pro Workflow Tools</strong> under <strong>Edit → Plugins</strong>, then restart.</li>
+</ol>
+
+<h2 class="beta-heading readme-heading">Readme</h2>
 
 <div class="post-body" markdown="1">
 
@@ -45,6 +55,8 @@ Enable the plugin, then configure it under **Editor Preferences → Plugins → 
 ---
 
 ## Features
+
+![Pro Workflow Tools]({{ '/assets/pro-workflow-tools/welcome.png' | relative_url }})
 
 ### Hotkeys
 
