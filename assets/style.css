@@ -186,6 +186,57 @@ a:focus-visible {
   font-size: 1.35rem;
 }
 
+.post-body h3 {
+  margin-top: 1.6rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.post-body hr {
+  border: 0;
+  height: 1px;
+  margin: 2rem 0;
+  background: var(--line);
+}
+
+.post-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0 1.5rem;
+  font-size: 0.95rem;
+}
+
+.post-body th,
+.post-body td {
+  padding: 0.45rem 0.9rem 0.45rem 0;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.post-body th {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.downloads {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.downloads a {
+  color: var(--text);
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+}
+
+.downloads a:hover {
+  color: var(--accent);
+}
+
 .post-body a {
   color: var(--accent);
   text-decoration-thickness: 1px;
