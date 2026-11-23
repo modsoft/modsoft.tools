@@ -9,6 +9,8 @@ robots: noindex, nofollow
 
 <h2 class="beta-heading">Downloads</h2>
 <ul class="downloads">
+  <li><a href="{{ '/releases/ProWorkflowTools_0.1.1_UE5.7_Win64.zip' | relative_url }}">ProWorkflowTools 0.1.1 — UE 5.7 Win64</a></li>
+  <li><a href="{{ '/releases/ProWorkflowTools_0.1.1_UE5.8_Win64.zip' | relative_url }}">ProWorkflowTools 0.1.1 — UE 5.8 Win64</a></li>
   <li><a href="{{ '/releases/ProWorkflowTools_0.1.0_UE5.7_Win64.zip' | relative_url }}">ProWorkflowTools 0.1.0 — UE 5.7 Win64</a></li>
   <li><a href="{{ '/releases/ProWorkflowTools_0.1.0_UE5.8_Win64.zip' | relative_url }}">ProWorkflowTools 0.1.0 — UE 5.8 Win64</a></li>
 </ul>
@@ -155,12 +157,13 @@ Press `J`:
 
 - Live preview, corner-anchored or centered (HUD **Centered** toggle; tap **Alt** to switch, or hold Alt during a drag to invert it for that drag). Click to stamp, drag to size
 - Camera controls are untouched: Alt+LMB orbits, Alt+MMB pans, RMB flies with WASD and wheel speed. The tool's keys and scroll bindings step aside while RMB is held
-- **MMB** on a scene decal (its projected area or its editor sprite) makes it the new source
+- **MMB** on a scene decal edits it in place; **MMB** on empty space goes back to placing. **Shift+MMB** copies that decal's material, size, flips, opacity and sort into the next placement
+- Pressing `J` with one decal selected edits that decal. **Inherit Selected Decal On Enter** (on by default) also copies its settings onto the next placement. Leaving the tool clears the selection
 - Category and Decal in the HUD are dropdowns
 - The preview lands on the surface drawn under the cursor. Static meshes, instances and foliage use their render triangles, so missing or simplified collision doesn't matter. Translucent surfaces follow the editor's **Allow Translucent Selection**. Landscape, BSP and other primitives use their own collision
 - **Shift+Scroll** size · **Ctrl+Scroll** rotate · **W+Scroll** depth (dashed guide on the preview, outward from the image) · **T+Scroll** alpha · **S+Scroll** sort
 - **Scroll** / **Tab+Scroll** change decal / category
-- `R` random rotation · `X` / `Z` flip horizontal / vertical · `C` Fit Surface · `Backspace` reset · Space move · Shift (while dragging) uniform
+- `R` random rotation and `Backspace` reset apply to the next stamp, not while editing a placed decal. `X` / `Z` flip horizontal / vertical · `C` Fit Surface · Space move · Shift (while dragging) uniform
 - **Fit Surface** (HUD checkbox, `C`, off by default): the preview tilts to the average of the surface under its footprint (center, corners, edge midpoints) while hovering and dragging, so it sits flat on curved or uneven geometry. The dragged corner stays under the cursor and the sampled points are drawn while dragging. Projection depth is left to you
 - Size, Depth, Angle, Alpha and Sort in the HUD are click-to-edit: type a value (`256 x 128`, `45`, `75%`), Enter applies it, Esc cancels. The next drag or scroll overrides it as usual
 - Every hotkey and scroll change shows a short fading readout by the cursor ("Flip V on", "Depth 128 cm", "Opacity 75%")
@@ -195,7 +198,7 @@ Press `J`:
 | **Material Clipboard** | Enable; hold key (default `Tab`) |
 | **Actor Grid Paint** | Enable; Intersect Test Bounds Scale (default `0.85`); Thin Axis Threshold (default `12.5` cm) and Relative Ratio (default `0.12`) |
 | **Super Groups** | Enable; Use Last Selected Actor As Group Pivot; Nest New Groups In Outliner Folder; Visualize Group Editing; Restrict Selection While Editing; Double-Click To Enter Groups; pivot icon options |
-| **Decal Placement** | Enable; Decal Collections; Default Projection Depth (`24` cm); Min Drag Extent (`5` cm); Preview Plane Extent (`128` cm); Rotation Scroll Interval (`5°`); Size Scroll Interval (`5` cm); Use Last Placed Size; Nest Placed Decals |
+| **Decal Placement** | Enable; Inherit Selected Decal On Enter; Decal Collections; Default Projection Depth (`24` cm); Min Drag Extent (`5` cm); Preview Plane Extent (`128` cm); Rotation Scroll Interval (`5°`); Size Scroll Interval (`5` cm); Use Last Placed Size; Nest Placed Decals |
 
 Project settings save to `Config/DefaultEditor.ini`. Per-user settings for this project (HUD checkboxes, the welcome splash "Don't show again", and your own Decal Collections list) save to `Saved/Config/<Platform>/EditorPerProjectUserSettings.ini`. The project's Decal Collections list is copied into the per-user list once, on first run.
 
