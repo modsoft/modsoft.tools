@@ -8,9 +8,13 @@ robots: noindex, nofollow
 <img class="splash" src="{{ '/assets/pro-workflow-tools/splash.png' | relative_url }}" alt="ProWorkflowTools">
 
 <h2 class="beta-heading">Downloads</h2>
+<p class="download-label">Latest</p>
 <ul class="downloads">
   <li><a href="{{ '/releases/ProWorkflowTools_0.1.1_UE5.7_Win64.zip' | relative_url }}">ProWorkflowTools 0.1.1 — UE 5.7 Win64</a></li>
   <li><a href="{{ '/releases/ProWorkflowTools_0.1.1_UE5.8_Win64.zip' | relative_url }}">ProWorkflowTools 0.1.1 — UE 5.8 Win64</a></li>
+</ul>
+<p class="download-label">Older</p>
+<ul class="downloads downloads-older">
   <li><a href="{{ '/releases/ProWorkflowTools_0.1.0_UE5.7_Win64.zip' | relative_url }}">ProWorkflowTools 0.1.0 — UE 5.7 Win64</a></li>
   <li><a href="{{ '/releases/ProWorkflowTools_0.1.0_UE5.8_Win64.zip' | relative_url }}">ProWorkflowTools 0.1.0 — UE 5.8 Win64</a></li>
 </ul>
@@ -79,6 +83,10 @@ Rebind under **Editor Preferences → Keyboard Shortcuts** (search "Pro Workflow
 
 ### Bounding Box Scale
 
+<img class="demo" src="{{ '/media/pro-workflow-tools/Vid_BoxScale_01.webp' | relative_url }}" alt="Bounding Box Scale">
+<img class="demo" src="{{ '/media/pro-workflow-tools/Vid_BoxScale_02.webp' | relative_url }}" alt="Bounding Box Scale">
+<img class="demo" src="{{ '/media/pro-workflow-tools/Vid_BoxScale_Grid.webp' | relative_url }}" alt="Bounding Box Scale with grid snap">
+
 Press `B` (or the box button after Scale in the viewport toolbar), then use the Scale widget (`R`). Face, edge and corner handles scale the bounds. The opposite side stays put and the actor pivot moves with it.
 
 - **Alt** while dragging: both sides move and the bounds center stays put. Alt+click on a handle starts that drag; Alt+click elsewhere still orbits
@@ -91,6 +99,8 @@ Press `B` (or the box button after Scale in the viewport toolbar), then use the 
 - Preferences: flat ratio, cage color, edge/corner color, handle size
 
 ### Per-Actor Origin Scale / Rotate
+
+<img class="demo" src="{{ '/media/pro-workflow-tools/Vid_PerActorTransform.webp' | relative_url }}" alt="Per-Actor Origin Scale and Rotate">
 
 With several actors selected and the Scale (`R`) or Rotate (`E`) widget up, hold `Shift` (configurable) while dragging. Each actor scales or rotates about its own origin instead of the shared pivot.
 
@@ -118,6 +128,8 @@ In perspective viewports an LMB drag marquees instead of moving the camera. Alt 
 
 ### Material Clipboard
 
+<img class="demo" src="{{ '/media/pro-workflow-tools/Vid_MaterialClipboard_01.webp' | relative_url }}" alt="Material Clipboard">
+
 Hold `Tab` (configurable). The cursor becomes an eyedropper; then:
 
 - **MMB**: pick the material under the cursor
@@ -127,6 +139,8 @@ Hold `Tab` (configurable). The cursor becomes an eyedropper; then:
 Only Material and Material Instance assets can be picked. Slots are matched by name across the selection. Instanced meshes and foliage can't be picked from or applied to.
 
 ### Actor Grid Paint
+
+<img class="demo" src="{{ '/media/pro-workflow-tools/Vid_GridPaint_01.webp' | relative_url }}" alt="Actor Grid Paint">
 
 Select exactly one static mesh or decal actor and press `T`:
 
@@ -144,6 +158,8 @@ Select exactly one static mesh or decal actor and press `T`:
 
 ### Super Groups
 
+<img class="demo" src="{{ '/media/pro-workflow-tools/Vid_SuperGroup_01.webp' | relative_url }}" alt="Super Groups">
+
 - **Enter** a locked group to edit inside it; **Shift+Enter** exits
 - **Double-click** a group member to enter its group; inside a group, double-click a nested group's member to step into that one (setting: Double-Click To Enter Groups)
 - While inside a group, a viewport bar shows **Exit Group** plus the **Visualize Editing** and **Restrict Selection** toggles (saved to settings)
@@ -152,6 +168,9 @@ Select exactly one static mesh or decal actor and press `T`:
 - Group pivot icons: Show → Advanced → Group Pivot Icons
 
 ### Interactive Decal Placement
+
+<img class="demo" src="{{ '/media/pro-workflow-tools/Vid_Decal_01.webp' | relative_url }}" alt="Interactive Decal Placement">
+<img class="demo" src="{{ '/media/pro-workflow-tools/Vid_Decal_Edit_01.webp' | relative_url }}" alt="Editing a placed decal">
 
 Press `J`:
 
